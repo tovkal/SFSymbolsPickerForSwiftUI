@@ -47,7 +47,7 @@ public struct SFSymbolsPicker: View {
                         
                         Image(systemName: icon)
                             .font(.system(size: 25))
-                            .animation(.linear)
+                            //.animation(.linear) Remove animation because it produces a weird effect 
                             .foregroundColor(self.icon == icon ? Color.blue : Color.primary)
                             .onTapGesture {
                                 
